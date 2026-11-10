@@ -1,0 +1,68 @@
+SUDO = SUPERUSER DO (EJECUTAR COMO ADMIN)
+APT = REPOSITORIO DE APLICACIONES (MARKETPLACE)
+SUDO APT UPDATE = VER CUANTAS APP SIN ACTUALIZAR
+SUDO APT UPGRADE = ACTUALIZA TODO
+APT SEARCH (NOMBRE) = BUSCA APLICACIONES
+APT SHOW (INFORMACION_PAQUETE) = MUESTRA INFORMACION DEL PAQUETE
+
+SUDO APT INSTALL (NOMBRE) = INSTALA PAQUETES (-Y = INSTALA SIN PEDIR CONFIRMACIÓN)
+SUDO APT REMOVE (NOMBRE) = BORRA PAQUETES (PERO MANTIENE CONFIGURACION)
+SUDO APT PURGE (NOMBRE) = BORRA TODO
+SUDO APT AUTOREMOVE = BORRA PAQUETES NO NECESARIOS
+
+sudo systemctl disable gdm3 = Quíta la interfaz gráfica
+sudo reboot = reinicia el ordenador
+sudo nano /etc/default/grub = modificar gestor de arranque
+sudo update-grub =
+sudo systemctl enable gdm3 = volver a la interfaz gráfica
+
+wget [url] = Instalar aplicaciones que no están en el terminal
+rm (archivo) = borra un archivo
+
+CD = Entra en tu carpeta personal
+CD (NOMBRE CARPETA/OTRA/etc..) = Te permite moverte entre carpetas Ej: CD Documentos/gedit
+
+ls = muestra el contenido
+
+clear = limpia la terminal
+
+passwd (nombre_usuario) = cambiar contraseña del usuario en la terminal del grub
+
+echo = Escribe un mensaje
+
+chmod +x (scrip.sh) = Da permisos.
+./scrip.sh = Ejecuta el archivo, este caso el script.
+
+control + c = salir
+
+sudo groupadd (nombre) = crea un nuevo grupo
+
+sudo groupmod -n (nombre nuevo)(nombre actual) = cambia el nombre del grupo
+
+cat /etc/group = ves todos los grupos
+
+sudo adduser prueba = crea un nuevo usuario (comando de Ubuntu)
+
+sudo useradd-m = crea un usuario con el directorio home (bloqueados y sin contraseña)
+
+sudo useradd -m -s /bin/bash (usuario) = crea un usuario e indica que usara bash
+
+sudo useradd -m -s /bin/bash -G (grupo)(usuario) = crea un usuario e indica que usara bash y le asigna un grupo
+
+sudo passwd (usuario) = establece una contraseña
+
+sudo ls -la (usuario) = muestra todos los archivos, incluidos los ocultos
+
+sudo -u (Usuario) xdg-user-dirs-update = crea las subcarpetas /documentos, /descargas, etc,
+
+su -l (usuario) = cambia de usuario
+
+sudo passwd -e (usuario) = obliga a cambiar la contraseña al usuario que digas
+
+sudo deluser (usuario) = elimina un usuario( no borra su carpeta)
+
+rm -r /home/(usuario)/ = borra la carpeta del usuario
+
+sudo deluser --remove-home (usuario) = elimina el usuario y su carpeta personal
+
+sudo usermod -L
